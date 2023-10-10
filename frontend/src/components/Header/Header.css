@@ -1,0 +1,141 @@
+.page__header {
+  width: calc(880 / 1280 * 100%);
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 45px;
+  transition: padding-top 0.2s linear;
+}
+
+@media screen and (max-width: 767px) {
+  .page__header {
+    width: 100%;
+    padding-top: 28px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .page__header {
+    padding-bottom: 50px;
+  }
+}
+
+.page__header_opened {
+  padding-top: 169px;
+}
+
+.header__logo {
+  display: block;
+  object-fit: cover;
+  width: 142px;
+  height: 33px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .header__logo {
+    width: 104px;
+    height: 24px;
+    margin-left: calc(27 / 320 * 100%);
+    margin-bottom: 30.6px;
+  }
+}
+
+.header__link {
+  margin-top: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+}
+
+@media screen and (max-width: 767px) {
+  .header__link {
+    margin-right: calc(30 / 320 * 100%);
+    margin-top: calc(6 / 320 * 100%);
+  }
+}
+
+.header__email-container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 6px;
+  transition: visibility 0.2s linear, height 0.2s linear;
+}
+
+@media screen and (max-width: 767px) {
+  .header__email-container {
+    visibility: hidden;
+    height: 0;
+    padding-top: 0;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+  }
+}
+
+.header__email-container_opened {
+  visibility: visible;
+  height: 142px;
+}
+
+.header__email {
+  margin: 0 24px 0 0;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .header__email {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.header__unlogin {
+  text-decoration: none;
+  color: #a9a9a9;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.21;
+}
+
+.header__button {
+  width: 24px;
+  height: 20px;
+  margin: calc(7 / 320 * 100%) calc(30 / 320 * 100%) 0 0;
+  display: none;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  background-image: url(../../images/menu-burger.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: block;
+  }
+}
+
+.header__button_active {
+  background-image: url(../../images/menu-close-icon.svg);
+  background-size: 20px 20px;
+}

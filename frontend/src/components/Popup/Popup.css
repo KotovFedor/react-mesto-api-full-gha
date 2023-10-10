@@ -1,0 +1,19 @@
+.popup_type_image {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.popup__image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.popup__registration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 36px;
+}
