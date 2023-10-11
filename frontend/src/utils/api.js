@@ -98,7 +98,7 @@ class Api {
 }
 
 const api = new Api({
-  serverUrl: "http://api.mesto.domainname.students.nomoredomainsrocks.ru",
+  serverUrl: "https://api.mesto.domainname.students.nomoredomainsrocks.ru",
 });
 
 export default api;
