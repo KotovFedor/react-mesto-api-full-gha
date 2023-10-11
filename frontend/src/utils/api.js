@@ -98,7 +98,7 @@ class Api {
 }
 
 const api = new Api({
-  serverUrl: "http://localhost:3000",
+  serverUrl: "http://api.mesto.domainname.students.nomoredomainsrocks.ru",
 });
 
 export default api;

@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:3000";
+const baseUrl = "http://api.mesto.domainname.students.nomoredomainsrocks.ru";
 
 function getResponseData(res) {
   return res.ok
