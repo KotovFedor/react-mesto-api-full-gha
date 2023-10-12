@@ -131,6 +131,7 @@ function App() {
   // }
 
   useEffect(() => {
+    if (loggedIn) {
     setIsLoadingCards(true);
     Promise.all([api.getUserInfo(localStorage.jwt), api.getCards(localStorage.jwt)])
       .then(([dataUser, dataCards]) => {
@@ -141,7 +142,8 @@ function App() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+    }
+  }, [loggedIn]);
 
   useEffect(() => {
     if (localStorage.jwt) {
