@@ -20,7 +20,7 @@ export default function Login({ setIsSend, setLoggedIn, setIsError }) {
       })
       .catch((err) => {
         setIsError(true);
-        console.error(`Ошибкак при авторизации ${err}`);
+        console.error(`Ошибка при авторизации ${err}`);
       })
       .finally(() => setIsSend(false));
   }
