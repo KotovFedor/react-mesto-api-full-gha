@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
-const regexForUrl = require('../utils/constants');
+const { regexForUrl } = require('../utils/constants');
 
 const UnautorizedError = require('../errors/UnautorizedError');
 

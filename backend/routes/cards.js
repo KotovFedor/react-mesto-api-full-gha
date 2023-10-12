@@ -7,7 +7,7 @@ const {
   likeCard,
   dislikeCard,
 } = require('../controllers/cards');
-const regexForUrl = require('../utils/constants');
+const { regexForUrl } = require('../utils/constants');
 
 router.post('/cards', celebrate({
   body: Joi.object().keys({
